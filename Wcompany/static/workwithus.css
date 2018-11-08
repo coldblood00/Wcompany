@@ -1,0 +1,173 @@
+body,html{
+    height: 100%;
+    margin:0;
+    font: 400 15px/1.8 "Lato",sans-serif;
+    color: #000000;
+}
+
+.bgimg-1,.bgimg-2{
+    position: relative;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.bgimg-1{
+    background-image: url("./images/architectural-design-architecture-building-443383.jpg");
+    min-height: 100%;
+}
+
+.bgimg-2{
+    background-image: url("./images/apple-computer-desk-326503.jpg");
+    min-height: 400px;
+}
+
+.nav{
+    list-style-type: none;
+    margin: 0;
+    padding: 10px 20px;
+    overflow: hidden;
+    background-color: rgba(0, 0, 0, 0.86);
+    color: snow;
+    position: -webkit-sticky; /* Safari */
+    position: sticky;
+    top: 0;
+    text-align: right;
+    display: block;
+}
+
+
+.sidenav{
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: rgba(17, 17, 17, 0.84);
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.sidenav a{
+    padding: 8px 8px 8px 3px;
+    text-decoration: none;
+    color: #ffffff;
+    display: block;
+    transition: 0.3s;
+    font-size: 35px;
+    border-bottom: 2px solid #818181;
+    margin: auto 30px;
+    text-align: center;
+}
+
+.sidenav a:hover{
+    color: #737373;
+    text-shadow: 1px 1px 2px #5f5f5f;
+    transition: text-shadow 0.3s;
+}
+
+
+.sidenav .closebtn{
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+    border-bottom: none;
+}
+
+#work{
+    background-size: cover;
+    height: 1000px;
+    text-align: center;
+    font-size: 43px;
+}
+
+#work p{
+    border: 2px solid black;
+    padding: 50px 100px;
+    font-size: 54px;
+    position: relative;
+    background-color: rgb(255,255,255);
+    background-color: rgba(255,255,255,0.5);
+    top: 30%;
+    width: 50%;
+    height: auto;
+    margin: 0 auto;
+}
+
+
+#knowledge{
+    text-align: center;
+    background-size: cover;
+    position: relative;
+    height: auto;
+    color: #000000;
+}
+
+.container {
+    width: 50%;
+    background-color: rgba(217, 217, 217, 0.79);
+    margin-left: 20px;
+}
+
+.skills{
+    text-align: right;
+    padding: 10px;
+    color: white;
+    background-color: #737373;
+}
+
+.clickme{
+    border: 2px solid black;
+    background-color: black;
+    color: white;
+    padding: 15px 10px;
+    text-decoration: none;
+    border-radius: 10px;
+}
+
+.clickme:hover{
+    background-color: white;
+    color: black;
+}
+
+#topBtn{
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 99;
+    font-size: 18px;
+    outline: none;
+    background-color: white;
+    border: 2px solid black;
+    color: white;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+#topBtn:hover{
+    animation: allbutton 1s ease infinite;
+}
+
+#html5{width:0%; background-color: rgb(255, 69, 0);color:transparent ; transition: width 1.4s ease-out,color 4s ease-out;}
+#css{width:0%; background-color: rgb(62, 78, 255);color:transparent; transition: width 1.4s ease-out,color 4s ease-out;}
+#javascript{width:0%; background-color: rgb(255, 255, 0);color:transparent; transition: width 1.4s ease-out,color 4s ease-out;}
+#backend{width:0%; background-color: rgb(0, 100, 0);color:transparent; transition: width 1.4s ease-out,color 4s ease-out;}
+
+@keyframes allbutton {
+    0%{
+        transform: translateY(0px);
+    }
+    50%{
+        transform: translateY(-20px);
+    }
+    100%{
+        transform: translateY(0px);
+    }
+}

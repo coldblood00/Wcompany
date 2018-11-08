@@ -1,0 +1,80 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Wdevnet:WorkWithUs</title>
+    <link rel="stylesheet" href="{% static 'workwithus.css' %}" type="text/css">
+</head>
+<body>
+<button onclick="topFunction()" id="topBtn" title="Go to top"><img src="{% static './images/chevron-up.svg' %}" style="width: 20px;"></button>
+<div class="bgimg-1">
+    <div id="work" class="work">
+        <div id="mySidenav" class="sidenav">
+          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()" style="font-size: xx-large">&#x2716;</a>
+          <a href="{% url 'home' %}">Home</a>
+          <a href="{% url 'workwithus' %}">Work with us</a>
+          <a href="{% url 'service' %}">Service</a>
+          <a href="{% url 'aboutus' %}">About Us</a>
+          <a href="{% url 'contactus' %}">Contact Us</a>
+        </div>
+        <ul class="nav">
+            <li><span style="float: left; margin: auto 20px;"><a href="{% url 'home' %}"><img src="./images/wdevnetwhite.jpg" alt="company logo" style="width:100px;"></a></span></li>
+            <li><span id="navbar" style="font-size: 30px; cursor:pointer;" onclick="openNav()">&#9776</span></li>
+        </ul>
+        <p>Want to work with us ?</p>
+    </div>
+</div>
+<br>
+<br>
+<div class="workintro" style="position: relative">
+    <p style="font-size: 20px; color: #000000; background-color: transparent; text-align: center">If you are interested in working with us you are welcome but you should meet <br>
+    the following conditions or else it would be difficult for you to work in a specific team <br>
+    due to lack of knowledge or skills required to work with us which can affect our work.</p>
+</div>
+<br>
+<br>
+<div class="bgimg-2">
+    <div id="knowledge">
+        <br>
+        <br>
+        <br>
+        <p style="font-size: 54px; text-align: center; color: snow; background-color: rgba(0,0,0,0.64); padding: 20px 10px;">Skills you need to have to work with us:</p>
+        <br>
+        <p style="text-align: left; font-size: 34px; color: black; margin-left: 20px;">HTML-5</p>
+        <div class="container">
+            <div id="html5" class="skills html">85%</div>
+        </div>
+        <p style="text-align: left; font-size: 34px; color: black; margin-left: 20px;">CSS-3</p>
+        <div class="container">
+            <div class="skills css">50%</div>
+        </div>
+        <p style="text-align: left; font-size: 34px; color: black; margin-left: 20px;">Javascript</p>
+        <div class="container">
+            <div class="skills javascript">32%</div>
+        </div>
+        <p style="text-align: left; font-size: 34px; color: black;  margin-left: 20px;">Backend</p>
+        <div class="container">
+            <div class="skills backend">30%</div>
+        </div>
+        <br>
+        <br>
+        <br>
+
+    </div>
+    <div id="topbutton"></div>
+</div>
+<div class="workintro" style="position: relative; text-align:center; ">
+    <p style="font-size: 20px; color: #000000; background-color: transparent; text-align: center">If you got the skills we need than proceed:</p>
+    <br>
+    <a class="clickme"  href="{% url 'contactus' %}" onmouseover="overMe()" onmouseout="outOfMe()">Click Me</a>
+    <br>
+    <img id="fingersup" src="{% static './images/extralogo/select.svg' %}" alt="clickup" style="width: 30px; margin-top: 15px;">
+    <br>
+    <br>
+    <br>
+</div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js"></script>
+<script src="{% static 'workwithus.js' %}"></script>
+</body>
+</html>

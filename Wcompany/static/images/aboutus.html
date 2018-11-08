@@ -1,0 +1,109 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Wdevnet</title>
+    <link rel="stylesheet" href="{% static 'aboutus.css' %}" type="text/css">
+</head>
+<body>
+<div class="bgimg-1">
+    <div id="mySidenav" class="sidenav">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()" style="font-size: xx-large">&#x2716;</a>
+      <a href="{% url 'home' %}">Home</a>
+      <a href="{% url 'workwithus' %}">Work with us</a>
+      <a href="{% url 'service' %}">Service</a>
+      <a href="{% url 'aboutus' %}">About Us</a>
+      <a href="{% url 'contactus' %}">Contact Us</a>
+    </div>
+    <ul class="nav">
+        <li><a href="{% url 'home' %}" style="text-decoration: none; color: white;"><span style="float: left; font-size: 30px;">Wdevnet</span></a></li>
+        <li><span id="navbar" style="font-size: 30px; cursor:pointer;" onclick="openNav()">&#9776</span></li>
+    </ul>
+    <br>
+    <br>
+    <br>
+    <br>
+    <header style="text-align: center">
+        <h1 style="text-align: center; font-size: 50px; background-color: rgba(255,255,255,0.58); border: 2px solid black; padding: 10px 20px; margin: 20px 50px;">About Us</h1>
+        <br>
+        <img id="laptop" src="{% static './images/extralogo/web-management.svg' %}">
+    </header>
+</div>
+<div style="position: relative;">
+    <div id="work" class="work">
+
+
+        <div class="flip-card">
+            <div class="flip-card-inner">
+                <div class="flip-card-front">
+                    <img src="{% static './images/abstract-art-artistic-1328891.jpg' %}" alt="CEO image" style="width:300px; height:300px; position: relative;">
+                    <h2 style="position: absolute;top:200px;left:0;width:100%;">CEO & Founder</h2>
+                </div>
+                <div class="flip-card-back">
+                    <h1>Krushil Narola</h1>
+                    <p style="font-size: 20px; margin: 10px 10px;">Hey, there I am the former CEO & the founder of the Wdevnet</p>
+                    <br>
+                    <span style="border:none;outline:0;padding: 12px;color: white;background-color: black;text-align: center;cursor:pointer;width: 100%;font-size: 18px; position: relative;"><a href="" style="text-decoration: none; color: white;">Contact Me</a></span>
+                </div>
+            </div>
+        </div>
+
+        <p id="aboutwdevnet" style="text-align: left; margin: 20px 30px; color: #000; font-size: 24px;">
+            <span style="font-weight: bold; color: dodgerblue;">Wdevnet</span> is a small start-up company in India which is growing day-by-day which usually meant to be building more user interface websites.
+            We offer <span style="font-weight: bold; color: dodgerblue;">software engineer jobs </span>for freshers but with some skills with them and even experienced professional.
+            <br>
+            <br>
+            If you are passionate about web development and web application this is it a perfect spot for you to shine and put your hands on. In these
+            start-up company you can help us in bringing to top. We here don't ask for degree but rather we ask for skills you developed in the sense
+            what programing language you are best in and if you can keep up with us which is the most important factor here in Wdevnet.
+            <br>
+            <br>
+            Our company is still under development but with our team we can and would achieve great heights in these <span style="font-weight: bold; color: dodgerblue;">cyberage</span> nothing can
+            can stop us from doing that because we are dedicated enough to do that and let our dreams come true. We dedicate our achievements to our developers who
+            never back down and complete their allocated targets on time or you can say before deadlines our company works under certain rules and regulations too.
+            which makes us more disciplined in our respective fields.
+            <br>
+            <br>
+            So, if you want to shine with bright colors join us today and learn from us and advance your career.
+        </p>
+    </div>
+</div>
+<div class="bgimg-2">
+    <div id="language">
+        <br>
+        <h1 style="background-color: rgba(255,255,255,0.68)">Programming Languages We Work With</h1>
+        <br>
+        <br>
+        <img src="{% static './images/languagelogo/html.svg' %}" alt="html5 logo">
+        <img src="{% static './images/languagelogo/css-3.svg' %}" alt="css3 logo">
+        <img src="{% static './images/languagelogo/javascript-logo.svg' %}" alt="javascript logo">
+        <img src="{% static './images/languagelogo/python-language-logotype.svg' %}" alt="python logo">
+        <br>
+    </div>
+</div>
+<button onclick="topFunction()" id="topBtn" title="Go to top"><img src="{% static './images/chevron-up.svg' %}" style="width: 20px;"></button>
+
+<div style="position:relative;">
+    <div id="footer">
+        <h2>Follow us on:</h2>
+        <br>
+        <div id="socialmediabutton">
+          <a href="#" class="socialbutton"><img src="{% static './images/sociallogo/facebook.svg' %}" alt="facebook button"></a>
+          <a href="#" class="socialbutton"><img src="{% static './images/sociallogo/instagram.svg' %}" alt="instagram button"></a>
+          <a href="#" class="socialbutton"><img src="{% static './images/sociallogo/google-plus.svg' %}" alt="google plus button"></a>
+          <a href="#" class="socialbutton"><img src="{% static './images/sociallogo/twitter.svg' %}" alt="twitter button"></a>
+          <a href="#" class="socialbutton"><img src="{% static './images/sociallogo/skype.svg' %}" alt="skype button"></a>
+        </div>
+        <br>
+        <p style="text-align: center">or<br><span style="font-size: 24px;">Mail Us</span></p>
+        <a href="mailto()" class="socialbutton"><img src="{% static './images/sociallogo/contact.svg' %}" alt="mail buttons"></a>
+        <p>Copyright © 2018 Wdevnet  - All Rights Reserved.</p>
+        <p>-------------------------------------------</p>
+        <p style="font-size: 15px;">Developed By - Krushil Narola</p>
+    </div>
+</div>
+
+<script src="{% static 'aboutus.js' %}"></script>
+</body>
+</html>

@@ -1,0 +1,81 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Wdevnet:Service</title>
+    <link rel="stylesheet" href="{% static 'service.css' %}" type="text/css">
+</head>
+<body>
+<div class="bgimg-1">
+    <div id="mySidenav" class="sidenav">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()" style="font-size: xx-large">&#x2716;</a>
+      <a href="{% url 'home' %}">Home</a>
+      <a href="{% url 'workwithus' %}">Work with us</a>
+      <a href="{% url 'service' %}">Service</a>
+      <a href="{% url 'aboutus' %}">About Us</a>
+      <a href="{% url 'contactus' %}">Contact Us</a>
+    </div>
+    <ul class="nav">
+        <li><span style="float: left; margin: auto 20px;"><a href="{% url 'home' %}"><img src="./images/wdevnetwhite.jpg" alt="company logo" style="width:100px;"></a></span></li>
+        <li><span id="navbar" style="font-size: 30px; cursor:pointer;" onclick="openNav()">&#9776</span></li>
+    </ul>
+    <br>
+    <br>
+    <br>
+    <br>
+    <header style="text-align: center">
+        <h1 style="text-align: center; font-size: 50px; background-color: rgba(255,255,255,0.58); border: 2px solid black; padding: 10px 20px; margin: 20px 50px;">Service</h1>
+        <br>
+        <img id="laptop" src="{% static './images/extralogo/technical-support.svg' %}">
+    </header>
+</div>
+<div id="service">
+
+        <div id="webservice" style="font-size: 20px; text-align: center;">
+            <h1 style="font-size: 30px; text-align: center;">Web Application Development</h1>
+            <p style="margin-left: 20px; text-align: left;">
+                Wdevnet specializes in only one software field which is <span style="font-weight: bold;color: dodgerblue;">web development</span>. We at Wdevnet only produce websites and are perfect in it.
+                Wdevnet produces most stunning and simple websites or web applications with simple but great animations. Website is nothing but an onscreen shop or showroom.
+                Wdevnet uses most efficient framework for back-end programming i.e. django and even libraries from javascript for front-end animations.
+                We at Wdevnet make simple but more user-friendly website i.e user would enjoy using website or web-applications made by us.
+            </p>
+            <img src="{% static './images/extralogo/computers.svg' %" alt="webdesign" style="width: 600px; height:auto;">
+        </div>
+</div>
+<hr>
+<br>
+<br>
+<div id="productcard">
+    <img src="{% static './images/playful_digital.png' %}" alt="website" style="width: 100%">
+    <h1>Any website starting from just $65</h1>
+    <p>Have your own custom websites</p>
+    <p><button>Place Order</button></p>
+</div>
+<br>
+<br>
+<button onclick="topFunction()" id="topBtn" title="Go to top"><img src="{% static './images/chevron-up.svg' %}" style="width: 20px;"></button>
+<hr>
+<div style="position:relative;">
+    <div id="footer">
+        <h2>Follow us on:</h2>
+        <br>
+        <div id="socialmediabutton">
+          <a href="#" class="socialbutton"><img src="{% static './images/sociallogo/facebook.svg' %}" alt="facebook button"></a>
+          <a href="#" class="socialbutton"><img src="{% static './images/sociallogo/instagram.svg' %}" alt="instagram button"></a>
+          <a href="#" class="socialbutton"><img src="{% static './images/sociallogo/google-plus.svg' %}" alt="google plus button"></a>
+          <a href="#" class="socialbutton"><img src="{% static './images/sociallogo/twitter.svg' %}" alt="twitter button"></a>
+          <a href="#" class="socialbutton"><img src="{% static './images/sociallogo/skype.svg' %}" alt="skype button"></a>
+        </div>
+        <br>
+        <p style="text-align: center">or<br><span style="font-size: 24px;">Mail Us</span></p>
+        <a href="mailto()" class="socialbutton"><img src="{% static './images/sociallogo/contact.svg' %}" alt="mail buttons"></a>
+        <p>Copyright © 2018 Wdevnet  - All Rights Reserved.</p>
+        <p>-------------------------------------------</p>
+        <p style="font-size: 15px;">Developed By - Krushil Narola</p>
+    </div>
+</div>
+
+<script src="{% static 'service.js' %}"></script>
+</body>
+</html>

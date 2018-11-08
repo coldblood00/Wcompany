@@ -1,0 +1,131 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Wdevnet:Home</title>
+    <link rel="stylesheet" href="{% static 'home.css' %}" type="text/css">
+    <link rel="icon" type="image/ico" href="{% static './images/growth.png' %}">
+</head>
+<body>
+<header class="bg-3">
+    <div >
+        <br>
+        <br>
+        <br>
+        <img class="company-logo animate-pop-in" src="{% static './images/wdevnetwhite.jpg' %}" alt="company logo" style="width:200px; margin-bottom:80px;">
+        <br>
+        <h1 class="header-title animate-pop-in" style="text-align: center; display: inline;">Get Your Custom Build Websites Today</h1>
+    </div>
+</header>
+<button onclick="topFunction()" id="topBtn" title="Go to top"><img src="{% static './images/chevron-up.svg' %}" style="width: 20px;"></button>
+<div class="bg-1">
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()" style="font-size: xx-large">&#x2716;</a>
+        <a href="{% url 'home' %}">Home</a>
+        <a href="{% url 'workwithus' %}">Work with us</a>
+        <a href="{% url 'service' %}">Service</a>
+        <a href="{% url 'aboutus' %}">About Us</a>
+        <a href="{% url 'contactus' %}" style="border-bottom: none;">Contact Us</a>
+    </div>
+    <ul class="nav">
+        <li><span style="float: left; margin: auto 20px;"><img src="{% static './images/wdevnetwhite.jpg' %}" alt="company logo" style="width:100px;"></span></li>
+        <li><span id="navbar" style="font-size: 30px; cursor:pointer;" onclick="openNav()">&#9776</span></li>
+    </ul>
+    <div id="wdevnet">
+        <br>
+        <br>
+
+
+        <h2 style="padding-top: 20px;font-family: 'Bookman Old Style',Arial,sans-serif;">What is Wdevnet ?</h2>
+        <br>
+        <br>
+        <section id="what" class="s">
+            <br>
+            <br>
+            <p><span>Wdevnet</span> is basically a webdeveloping company<br>
+                which is under progress and soon going to be<br>
+                one of the best webdeveloping companies.</p>
+            <!--<img src="./images/61A9E423-ABFC-4371-8D71-20777A6123A9.jpg">-->
+        </section>
+        <br>
+        <h2>What you get from Wdevnet ?</h2>
+        <br>
+        <br>
+        <section id="get" class="s">
+            <p><span>Wdevnet</span> makes website for you in minimum costing<br>
+                with high quality animations and graphic designs. Which mainly<br>
+                depends upon you like what animations you want from us for your website.</p>
+        </section>
+        <br>
+        <h2>Who works in Wdevnet ?</h2>
+        <br>
+        <br>
+        <section id="who" class="s">
+            <p>Those who are passionate about design as well as programming<br>
+                works with us. We hire a software engineers interested in web applications.<br> But should meet the minimum requirements </p>
+        </section>
+        <br>
+        <h2>Service you get by Wdevnet</h2>
+        <br>
+        <br>
+        <section id="service" class="s">
+            <p>We from <span>Wdevnet</span> will give you free service for<br>
+                1 year. But we assure you that you wont require any services from us until<br>
+            and unless you follow all rules and regulations</p>
+        </section>
+        <br>
+    </div>
+</div>
+<hr>
+<div style="position: relative;">
+    <div id="language">
+        <br>
+        <h2>Programming Languages used by us:</h2>
+        <img src="{% static './images/languagelogo/html.svg' %}" alt="html5 logo">
+        <img src="{% static './images/languagelogo/css-3.svg' %}" alt="css3 logo">
+        <img src="{% static './images/languagelogo/javascript-logo.svg' %}" alt="javascript logo">
+        <img src="{% static './images/languagelogo/python-language-logotype.svg' %}" alt="python logo">
+        <br>
+        <br>
+        <br>
+        <br>
+    </div>
+</div>
+<hr>
+<div class="bg-2">
+<div id="x">
+    <div class="center">
+        <h2 style="color: snow;">Want to work with us ?</h2>
+        <img src="{% static './images/extralogo/handshake.svg' %}" alt="support image" style="width:50px;">
+        <br>
+        <br>
+        <br>
+        <a href="{% url 'workwithus' %}" id="letRock">Let's rock</a>
+    </div>
+</div>
+</div>
+<hr>
+<div style="position:relative;">
+    <div id="footer">
+        <br>
+        <div id="socialmediabutton">
+          <a href="https://www.facebook.com/wdev.net.7" class="socialbutton"><img src="{% static './images/sociallogo/facebook.svg' %}" alt="facebook button"></a>
+          <a href="https://www.instagram.com/wdevnetcompany/" class="socialbutton"><img src="{% static './images/sociallogo/instagram.svg' %}" alt="instagram button"></a>
+          <a href="https://twitter.com/net_wdev?lang=en" class="socialbutton"><img src="{% static './images/sociallogo/twitter.svg' %}" alt="twitter button"></a>
+          <a href="https://secure.skype.com/portal/overview" class="socialbutton"><img src="{% static './images/sociallogo/skype.svg' %}" alt="skype button"></a>
+
+        </div>
+        <br>
+        <p style="text-align: center">or<br><span style="font-size: 24px;">Mail Us</span></p>
+        <a href="mailto:wdevnetcon@gmail.com" class="socialbutton"><img src="{% static './images/sociallogo/contact.svg' %}" alt="mail buttons"></a>
+        <p>Copyright All Rights Reserved © 2018
+        </p>
+        <p style="font-size: 14px;"><a href="{% url 'privacy' %}" style="text-decoration: none; color:grey;">Privacy</a><span style="color: white;">-----------</span><a href="{% url 'terms' %}" style="text-decoration: none; color:grey;">Terms of Services</a><span style="color: white;">-----------</span><a href="{% url 'disclaimer' %}" style="text-decoration: none; color:grey;">Disclaimer</a></p>
+        <p>-------------------------------------------</p>
+        <p style="font-size: 15px;">Developed By - Krushil Narola</p>
+    </div>
+</div>
+<script src="{% static 'home.js' %}"></script>
+</body>
+</html>
