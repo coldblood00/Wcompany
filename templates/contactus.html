@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <title>Wdevnet:Contact Us</title>
     <link rel="stylesheet" href="{% static 'contactus.css' %}" type="text/css">
-    <link rel="icon" type="image/ico" href="{% static './images/webminilogo.png' %}">
+    <link rel="icon" type="image/ico" href="{% static './images/logot.png' %}">
 </head>
 <body>
 <div class="bgimg-1">
@@ -18,7 +18,7 @@
         <a href="{% url 'contactus' %}" style="border-bottom: none;">Contact Us</a>
     </div>
     <ul class="nav">
-        <li><span style="float: left; margin: auto 20px;"><a href="{% url 'home' %}"><img src="{% static './images/webminilogo.png' %}" alt="company logo" style="width:65px; border-radius:10px;"></a></span></li>
+        <li><span style="float: left; margin: auto 20px;"><a href="{% url 'home' %}"><img src="{% static './images/logot.png' %}" alt="company logo" style="width:65px; border-radius:10px;"></a></span></li>
         <li><span id="navbar" style="font-size: 30px; cursor:pointer;" onclick="openNav()">&#9776</span></li>
     </ul>
     <header style="text-align: center">
@@ -40,7 +40,7 @@
 </div>
 
 <div class="bg-img" style="text-align: center;">
-    <a href="mailto:wdevnetcon@gmail.com"><img src="{% static './images/sociallogo/contact.svg' %}" alt="mail buttons" style="margin: 15%; background-color: transparent; width: 300px"></a>
+    <a id="mailus" href="mailto:wdevnetcon@gmail.com"><img src="{% static './images/sociallogo/contact.svg' %}" alt="mail buttons" style="margin: 15%; background-color: transparent; width: 300px"></a>
 </div>
 <br>
 <hr>

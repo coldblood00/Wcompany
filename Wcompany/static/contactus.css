@@ -147,6 +147,10 @@ hr{
     width: 100%;
 }
 
+#mailus:hover{
+    opacity:0.6;
+}
+
 
 #footer{
     text-align: center;
